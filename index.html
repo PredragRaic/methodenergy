@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Method Energy</title>
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;800&display=swap" rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="./scss/methodenergy.css">
+</head>
+<body>
+
+
+    <header class="header">
+        <div class="header__logo">
+            <a href="#">
+                <img src="https://methodenergy.boldizart.com/wp-content/uploads/2020/10/konstrakt-logo-inv.png" alt="Method Energy Novi Sad">
+            </a>
+        </div>
+        <div class="header-menu">
+            <div class="header-menu-burger">
+                <div class="header-menu-burger-container" onclick="myFunction(this)">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                  </div>
+            </div>
+            <div class="header-menu-nav">
+                <ul class="header-menu-nav-ul">
+                    <li class="header-menu-nav-ul-list"><a href="#">Home</a></li>
+                    <li class="header-menu-nav-ul-list">
+                        <a href="#">
+                            About
+                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                            </svg>
+                        </a>
+                        <ul class="header-menu-nav-ul-list-underlist">
+                            <li class="header-menu-nav-ul-list-underlist-li"><a href="#">Method Energy Story</a></li>
+                            <li class="header-menu-nav-ul-list-underlist-li"><a href="#">Projects</a></li>
+                            <li class="header-menu-nav-ul-list-underlist-li"><a href="#">Careers</a></li>
+                            <li class="header-menu-nav-ul-list-underlist-li"><a href="#">Partners</a></li>
+                            <li class="header-menu-nav-ul-list-underlist-li"><a href="#">Locations</a></li>
+                        </ul>
+                    </li>
+                    <li class="header-menu-nav-ul-list">
+                        <a href="#">
+                            Service
+                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                            </svg>
+                        </a>
+                        <ul class="header-menu-nav-ul-list-underlist">
+                            <li class="header-menu-nav-ul-list-underlist-li"><a href="#">Home Automation</a></li>
+                            <li class="header-menu-nav-ul-list-underlist-li"><a href="#">Renewable Energy</a></li>
+                            <li class="header-menu-nav-ul-list-underlist-li"><a href="#">Industrial Installation</a></li>
+                            <li class="header-menu-nav-ul-list-underlist-li"><a href="#">Construction</a></li>
+                        </ul>
+                    </li>
+                    <li class="header-menu-nav-ul-list"><a href="#">News</a></li>
+                    <li class="header-menu-nav-ul-list"><a href="#">Contact Us</a></li>
+                    <li class="header-menu-nav-ul-search" onclick="searchDisplayOn1()">
+                        <a href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <!-------------------------------------------- mobile dropping menu ---------------------------------------------------------------------->
+    <div class="mobile-header-menu-nav">
+        <ul class="mobile-header-menu-nav-ul">
+            <li class="mobile-header-menu-nav-ul-list"><a href="#">Home</a></li>
+            <li class="mobile-header-menu-nav-ul-list">
+                <a href="#" class="collapsible">
+                    About
+                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                    </svg>
+                </a>
+                <ul class="mobile-header-menu-nav-ul-list-underlist" >
+                    <li class="mobile-header-menu-nav-ul-list-underlist-li"><a href="#">Method Energy Story</a></li>
+                    <li class="mobile-header-menu-nav-ul-list-underlist-li"><a href="#">Projects</a></li>
+                    <li class="mobile-header-menu-nav-ul-list-underlist-li"><a href="#">Careers</a></li>
+                    <li class="mobile-header-menu-nav-ul-list-underlist-li"><a href="#">Partners</a></li>
+                    <li class="mobile-header-menu-nav-ul-list-underlist-li"><a href="#">Locations</a></li>
+                </ul>
+            </li>
+            <li class="mobile-header-menu-nav-ul-list">
+                <a href="#" class="collapsible">
+                    Service
+                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                    </svg>
+                </a>
+                <ul class="mobile-header-menu-nav-ul-list-underlist">
+                    <li class="mobile-header-menu-nav-ul-list-underlist-li"><a href="#">Home Automation</a></li>
+                    <li class="mobile-header-menu-nav-ul-list-underlist-li"><a href="#">Renewable Energy</a></li>
+                    <li class="mobile-header-menu-nav-ul-list-underlist-li"><a href="#">Industrial Installation</a></li>
+                    <li class="mobile-header-menu-nav-ul-list-underlist-li"><a href="#">Construction</a></li>
+                </ul>
+            </li>
+            <li class="mobile-header-menu-nav-ul-list"><a href="#">News</a></li>
+            <li class="mobile-header-menu-nav-ul-list"><a href="#">Contact Us</a></li>
+            <div class="mobile-dropping-menu-middle-line"></div>
+            <li class="mobile-header-menu-nav-ul-search" onclick="searchDisplayOn()">
+                <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                    </svg>
+                </a>
+            </li>
+        </ul>
+    </div>
+<!-- __________________________________________________________________________________________________________________________________ -->
+
+
+<!-- ---------------------------------------------------search block ---------------------------->
+    <div class="search-block" id="search-block-display">
+        <a href="#">
+            <div class="search-block-chevron" onclick="myFunction1()">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-chevron-up" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z"/>
+                </svg>
+            </div>
+        </a>
+        <form action="https://methodenergy.boldizart.com/" method="get" class="search-form">
+            <input type="text" name="s" placeholder="Looking for..." class="search-input">
+            <button type="submit" class="search-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                </svg>
+            </button>
+        </form>
+
+    </div>
+<!-- ___________________________________________________________________________________________________ -->
+    <div class="hero">
+
+    </div>
+
+
+
+    <section class="example-section">
+        <div class="container">
+            <h1>Bootstrap responsive rows example</h1>
+            <div class="row">
+                <div class="col-md-6 col-lg-4 py-3">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</div>
+                <div class="col-md-6 col-lg-4 py-3">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</div>
+                <div class="col-md-6 col-lg-4 py-3">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="section partners-section block full bg-default" id="">
+        <div class="container">
+            <div class="slider-container">
+                <div class="slider-content d-flex" data-count="3">
+                    <div class="col-6 col-sm-4 col-md-3 col-lg-2 partner text-center">
+                        <a href="https://thewalnutfund.com/" target="_blank" title="Pogldaj veb-sajt" rel="nofollow noopener">
+                        <img data-lazyloaded="1" data-placeholder-resp="300x150" src="https://boldizart.com/wp-content/uploads/2022/08/the-walnut-fund.svg" width="300" height="150" data-src="https://boldizart.com/wp-content/uploads/2022/08/the-walnut-fund.svg" class="partner-logo entered litespeed-loaded" alt="the-walnut-fund" decoding="async" title="Održavanje web sajta - BoldizArt" data-ll-status="loaded">
+                        <noscript>
+                            <img width="300" height="150" src="https://boldizart.com/wp-content/uploads/2022/08/the-walnut-fund.svg" class="partner-logo" alt="the-walnut-fund" decoding="async" title="Održavanje web sajta - BoldizArt">
+                        </noscript>
+                        </a>
+                    </div>
+                    <div class="col-6 col-sm-4 col-md-3 col-lg-2 partner text-center">
+                        <a href="https://smek.rs/" target="_blank" title="Šmek fitnes" rel="nofollow noopener">
+                        <img data-lazyloaded="1" data-placeholder-resp="300x150" src="https://boldizart.com/wp-content/uploads/2022/10/smek.svg" width="300" height="150" data-src="https://boldizart.com/wp-content/uploads/2022/10/smek.svg" class="partner-logo entered litespeed-loaded" alt="Šmek" decoding="async" title="Održavanje web sajta - BoldizArt" data-ll-status="loaded">
+                        <noscript>
+                            <img width="300" height="150" src="https://boldizart.com/wp-content/uploads/2022/10/smek.svg" class="partner-logo" alt="Šmek" decoding="async" title="Održavanje web sajta - BoldizArt">
+                        </noscript>
+                        </a>
+                    </div>
+                    <div class="col-6 col-sm-4 col-md-3 col-lg-2 partner text-center">
+                        <a href="https://zdravasvest.com" target="_blank" title="Pogldaj veb-sajt" rel="nofollow noopener">
+                        <img data-lazyloaded="1" data-placeholder-resp="300x300" src="https://boldizart.com/wp-content/uploads/2021/08/zdrava-svest-1.svg" width="300" height="300" data-src="https://boldizart.com/wp-content/uploads/2021/08/zdrava-svest-1.svg" class="partner-logo entered litespeed-loaded" alt="zdrava svest 1 - BoldizArt" decoding="async" title="Održavanje web sajta - BoldizArt" data-ll-status="loaded">
+                        <noscript>
+                            <img width="300" height="300" src="https://boldizart.com/wp-content/uploads/2021/08/zdrava-svest-1.svg" class="partner-logo" alt="zdrava svest 1 - BoldizArt" decoding="async" title="Održavanje web sajta - BoldizArt">
+                        </noscript>
+                        </a>
+                    </div>
+                    <div class="col-6 col-sm-4 col-md-3 col-lg-2 partner text-center">
+                        <a href="https://www.softerrific.com/" target="_blank" title="Pogledaj softerrific.com" rel="nofollow noopener">
+                        <img data-lazyloaded="1" data-placeholder-resp="300x300" src="https://boldizart.com/wp-content/uploads/2021/08/softerrific-1.svg" width="300" height="300" data-src="https://boldizart.com/wp-content/uploads/2021/08/softerrific-1.svg" class="partner-logo entered litespeed-loaded" alt="softerrific 1 - BoldizArt" decoding="async" title="Održavanje web sajta - BoldizArt" data-ll-status="loaded">
+                        <noscript>
+                            <img width="300" height="300" src="https://boldizart.com/wp-content/uploads/2021/08/softerrific-1.svg" class="partner-logo" alt="softerrific 1 - BoldizArt" decoding="async" title="Održavanje web sajta - BoldizArt">
+                        </noscript>
+                        </a>
+                    </div>
+                    <div class="col-6 col-sm-4 col-md-3 col-lg-2 partner text-center">
+                        <a href="https://setisesebe.com" target="_blank" title="Pogldaj veb-sajt" rel="nofollow noopener">
+                        <img data-lazyloaded="1" data-placeholder-resp="300x150" src="https://boldizart.com/wp-content/uploads/2022/08/seti-se-sebe.svg" width="300" height="150" data-src="https://boldizart.com/wp-content/uploads/2022/08/seti-se-sebe.svg" class="partner-logo entered litespeed-loaded" alt="Seti se sebe" decoding="async" title="Održavanje web sajta - BoldizArt" data-ll-status="loaded">
+                        <noscript>
+                            <img width="300" height="150" src="https://boldizart.com/wp-content/uploads/2022/08/seti-se-sebe.svg" class="partner-logo" alt="Seti se sebe" decoding="async" title="Održavanje web sajta - BoldizArt">
+                        </noscript>
+                        </a>
+                    </div>
+                    <div class="col-6 col-sm-4 col-md-3 col-lg-2 partner text-center">
+                        <a href="https://meaning.rs/" target="_blank" title="Pogledaj meaning.rs" rel="nofollow noopener">
+                        <img data-lazyloaded="1" data-placeholder-resp="300x300" src="https://boldizart.com/wp-content/uploads/2021/08/meaning-1.svg" width="300" height="300" data-src="https://boldizart.com/wp-content/uploads/2021/08/meaning-1.svg" class="partner-logo entered litespeed-loaded" alt="meaning 1 - BoldizArt" decoding="async" title="Održavanje web sajta - BoldizArt" data-ll-status="loaded">
+                        <noscript>
+                            <img width="300" height="300" src="https://boldizart.com/wp-content/uploads/2021/08/meaning-1.svg" class="partner-logo" alt="meaning 1 - BoldizArt" decoding="async" title="Održavanje web sajta - BoldizArt">
+                        </noscript>
+                        </a>
+                    </div>
+                    <div class="col-6 col-sm-4 col-md-3 col-lg-2 partner text-center">
+                        <a href="http://1posto.rs/" target="_blank" title="Pogldaj veb-sajt" rel="nofollow noopener">
+                        <img data-lazyloaded="1" data-placeholder-resp="300x150" src="https://boldizart.com/wp-content/uploads/2022/08/fondacija-1posto.svg" width="300" height="150" data-src="https://boldizart.com/wp-content/uploads/2022/08/fondacija-1posto.svg" class="partner-logo entered litespeed-loaded" alt="fondacija-1posto" decoding="async" title="Održavanje web sajta - BoldizArt" data-ll-status="loaded">
+                        <noscript>
+                            <img width="300" height="150" src="https://boldizart.com/wp-content/uploads/2022/08/fondacija-1posto.svg" class="partner-logo" alt="fondacija-1posto" decoding="async" title="Održavanje web sajta - BoldizArt">
+                        </noscript>
+                        </a>
+                    </div>
+                    <div class="col-6 col-sm-4 col-md-3 col-lg-2 partner text-center">
+                        <a href="https://asdizajn.rs/" target="_blank" title="Pogledaj asdizajn.rs" rel="nofollow noopener">
+                        <img data-lazyloaded="1" data-placeholder-resp="300x300" src="https://boldizart.com/wp-content/uploads/2021/08/asdizajn-1.svg" width="300" height="300" data-src="https://boldizart.com/wp-content/uploads/2021/08/asdizajn-1.svg" class="partner-logo entered litespeed-loaded" alt="asdizajn 1 - BoldizArt" decoding="async" title="Održavanje web sajta - BoldizArt" data-ll-status="loaded">
+                        <noscript>
+                            <img width="300" height="300" src="https://boldizart.com/wp-content/uploads/2021/08/asdizajn-1.svg" class="partner-logo" alt="asdizajn 1 - BoldizArt" decoding="async" title="Održavanje web sajta - BoldizArt">
+                        </noscript>
+                        </a>
+                    </div>
+                    <div class="col-6 col-sm-4 col-md-3 col-lg-2 partner text-center">
+                        <a href="https://mainpoint.edu.rs/" target="_blank" title="Pogldaj veb-sajt" rel="nofollow noopener">
+                        <img data-lazyloaded="1" data-placeholder-resp="300x150" src="https://boldizart.com/wp-content/uploads/2022/08/main-point.svg" width="300" height="150" data-src="https://boldizart.com/wp-content/uploads/2022/08/main-point.svg" class="partner-logo entered litespeed-loaded" alt="main-point" decoding="async" title="Održavanje web sajta - BoldizArt" data-ll-status="loaded">
+                        <noscript>
+                            <img width="300" height="150" src="https://boldizart.com/wp-content/uploads/2022/08/main-point.svg" class="partner-logo" alt="main-point" decoding="async" title="Održavanje web sajta - BoldizArt">
+                        </noscript>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+    <!-- Scripts -->
+    <script src="/js/minified/methodenergy.js"></script>
+    <!-- <script src="/js/methodenergy.js"></script> -->
+</html>

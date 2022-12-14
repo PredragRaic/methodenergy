@@ -1,0 +1,38 @@
+.scroll-to-top {
+    z-index: 5;
+    position: fixed;
+    right: .9rem;
+    bottom: 5.2rem;
+    width: 50px;
+    height: auto;
+    .scroll-to-top-button {
+        position: relative;
+        visibility: hidden;
+        margin-top: .4rem;
+        width: 50px;
+        height: 50px;
+        background-color: $secondary;
+        border: 2px solid $primary;
+        border-radius: 5px;
+        transition: background-color ease-in-out 280ms;
+        .arrow-up {
+            width: 1.2rem;
+            height: 1.2rem;
+            display: inline-block;
+            border: 3px solid transparent;
+            border-radius: 3px;
+            border-top-color: $primary;
+            border-left-color: $primary;
+            transform: rotate(45deg);
+            margin-top: 0.5rem;
+         }
+        &:hover {
+            cursor: pointer;
+            background-color: $primary;
+            .arrow-up {
+                border-top-color: $secondary;
+                border-left-color: $secondary;
+            }
+        }
+    }
+}

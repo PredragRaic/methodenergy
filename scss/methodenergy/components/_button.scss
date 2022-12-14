@@ -1,0 +1,20 @@
+
+.btn {
+   font-family: 'Inter', sans-serif;
+   transition: all ease-in-out 240ms;
+   display: block;
+   width: 100%;
+   margin-bottom: .6rem;
+   @include media-breakpoint-up(md) {
+      display: inline-block;
+      width: auto;
+   }
+}
+
+.btn-primary {
+   color: $white;
+   &:hover {
+      background-color: $white;
+      color: $primary;
+   }
+}

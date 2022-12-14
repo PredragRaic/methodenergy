@@ -1,0 +1,32 @@
+// Partners section
+.partners-section {
+    // background:$primary;
+    &.section {
+        padding: 2.4rem 0;
+    }
+    .slider-container {
+        position: relative;
+        overflow: hidden;
+        .slider-content {
+            transition: transform ease-in-out 480ms;
+            width: 100%;
+            margin: 0;
+            flex-wrap: wrap;
+            flex-flow: row;
+            .partner {
+                filter: grayscale(1);
+                max-height: 100px;
+                transition: filter ease-in-out 480ms;
+                &:hover {
+                    filter: grayscale(0);
+                }
+                img {
+                    width: auto;
+                    max-height: 80px;
+                }
+            }
+        }
+    }
+}
+
+

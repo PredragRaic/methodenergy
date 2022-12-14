@@ -1,0 +1,84 @@
+html, body {
+   min-height: 100%;
+   font-weight: $font-weight-light;
+   font-size: 100%;
+}
+
+.title-prepend {
+   font-family: $title-font;
+   font-size: $font-size;
+   font-weight: $font-weight-bold;
+   color: $primary;
+}
+
+h1, .h1, .title {
+   font-family: $title-font;
+   font-weight: $font-weight-bold;
+   margin-top: 20px;
+   margin-bottom: 20px;
+   color: $title;
+   line-height: $title-line-height;
+   @include fluid-type(320px, 1920px, 40px, 80px);
+}
+
+h2, .h2, .sub-title {
+   font-family: $title-font;
+   font-weight: $font-weight-bold;
+   margin-top: 10px;
+   margin-bottom: 10px;
+   color: $title;
+   line-height: $title-line-height;
+   @include fluid-type(320px, 1920px, 30px, 60px);
+}
+
+h3, .h3 {
+   font-family: $title-font;
+   font-weight: $font-weight-bold;
+   font-size: 24x;
+   margin-top: 16px;
+   margin-bottom: 16px;
+   color: $title;
+   line-height: $title-line-height;
+   @include media-breakpoint-down(md) {
+      margin-top: 8px;
+      margin-bottom: 8px;
+   }
+   @include fluid-type(320px, 1920px, 18px, 25x);
+}
+
+p, .p, .text {
+   font-family: $text-font;
+   font-weight: $font-weight-light;
+   font-size: $font-size;
+   line-height: $text-line-height;
+   color: $text;
+}
+
+.form-control {
+   border-radius: 10px;
+   border: none;
+}
+
+a:not(.btn), .link {
+   transition: opacity ease-in-out 280ms;
+   text-decoration: none;
+   opacity: .85;
+   &:hover {
+      opacity: 1;
+   }
+}
+
+.image {
+   max-width: 100%;
+   height: auto;
+}
+
+section {
+   padding-top: 75px;
+   padding-bottom: 75px;
+   position: relative;
+   .container {
+      z-index: 1;
+      position: relative;
+   }
+}

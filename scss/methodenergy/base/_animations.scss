@@ -1,0 +1,39 @@
+@keyframes moveRightAndShow {
+    0%   {opacity: 0; transform: translateX(0)}
+    20%   {opacity: 0; transform: translateX(0)}
+    45%  {opacity: .8; transform: translateX(20vw)}
+    45%  {opacity: 1; transform: translateX(20vw)}
+    65%  {opacity: 1; transform: translateX(20vw)}
+    100% {opacity: 1; transform: translateX(0)}
+}
+@keyframes moveDownAndShow {
+    0%   {opacity: 0; transform: translateY(0)}
+    20%  {opacity: 0; transform: translateY(0)}
+    45%  {opacity: .8; transform: translateY(20vw)}
+    65%  {opacity: 1; transform: translateY(20vw)}
+    85%  {opacity: 1; transform: translateY(20vw)}
+    100% {opacity: 1; transform: translateY(0)}
+}
+@keyframes moveUpAndShow {
+    0%   {opacity: 0; transform: translateY(10vw)}
+    100% {opacity: 1; transform: translateY(0)}
+}
+@keyframes moveUpAndShowDelay {
+    0%   {opacity: 0; transform: translateY(10vw)}
+    65%   {opacity: 0; transform: translateY(10vw)}
+    100% {opacity: 1; transform: translateY(0)}
+}
+@keyframes show {
+    0%   {opacity: 0;}
+    45%  {opacity: 0;}
+    100% {opacity: .85;}
+}
+@keyframes slowShow {
+    0%   {opacity: 0;}
+    65%  {opacity: 0;}
+    100% {opacity: .85;}
+}
+@keyframes showVideo {
+    0%   {opacity: 0;}
+    100% {opacity: .85;}
+}

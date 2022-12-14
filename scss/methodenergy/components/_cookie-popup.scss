@@ -1,0 +1,25 @@
+.cookie-consent-banner {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 9999;
+    box-sizing: border-box;
+    width: 100%;
+    background-color: $light;
+    box-shadow: 0 -8px 12px rgb(0 0 0 / 5%)
+    &__copy { 
+        margin-bottom: 16px;
+    }
+    &__description {
+        * {
+            font-size: 90%
+        }
+    }
+    .form-check-label {
+        font-family: $text-font;
+        color: $text
+    }
+    .btn {
+        margin-bottom: 0;
+    }
+}

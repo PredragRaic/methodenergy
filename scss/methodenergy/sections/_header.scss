@@ -1,0 +1,199 @@
+// burger ------------------------------------------------------------------------------
+.header-menu-burger-container{
+    background-color: $red-decoration;
+    display: inline-block;
+    border-radius: 1.5px;
+    padding: 3px;
+    cursor: pointer;
+    .bar1, .bar2, .bar3 {
+        width: 21px;
+        height: 3px;
+        background-color: white;
+        margin: 3px 3px;
+        transition: 0.4s;
+        border-radius: 1.5px;
+      }
+      &.change .bar1 {
+        transform: translate(0, 6px) rotate(-45deg);
+      }
+    
+      &.change .bar2 {opacity: 0;}
+      
+      &.change .bar3 {
+        transform: translate(0, -6px) rotate(45deg);
+      }
+      @media only screen and (min-width: $lg) {
+        display: none;
+      }
+}
+// ___________________________________________________________________________
+
+
+.header{
+  margin: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &__logo{
+      cursor: pointer;
+      z-index: 6;
+        img{
+            width: 100%;
+            max-width: 125px;
+            @media only screen and (min-width: $md) {
+              max-width: 210px;
+            }
+        }
+    }
+    &-menu-nav-ul{
+      display: none;
+      margin-bottom: 0;
+      @media only screen and (min-width: $lg) {
+        display: flex;
+        align-items: center;
+      }
+      &-list{
+        position: relative;
+        list-style-type: none;
+        padding: 10px 25px;
+        a{
+          position: relative;
+          color: black;
+          font-family: "Manrope",Arial,Helvetica,sans-serif;
+          font-size: 15px;
+          text-decoration-color: $primary;
+          opacity: 1;
+        }
+      }
+      &-search{
+        list-style-type: none;
+        position: relative;
+        padding: 10px 18px;
+        margin-left: 50px;
+        a{
+          color: black;
+          opacity: 1;
+        }
+      }
+    }
+}
+
+// ------ Navigation menu animation - red - background  - transition-------------------
+.header-menu-nav-ul-list::before{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: $primary;
+  transition: transform 200ms ease-in;
+  transform: scaleY(0);
+  transform-origin: bottom;
+  z-index: -1;
+}
+.header-menu-nav-ul-list:hover::before{
+  transform: scaleY(1);
+  transform-origin: top;
+}
+
+
+.header-menu-nav-ul-search::before{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: $primary;
+  transition: transform 200ms ease-in;
+  transform: scaleY(0);
+  transform-origin: bottom;
+  z-index: -1;
+}
+.header-menu-nav-ul-search:hover::before{
+  transform: scaleY(1);
+  transform-origin: top;
+}
+// ________________________________________________________________________
+
+
+// ------ Navigation menu animation - red - underline  - transition-------------------
+.header-menu-nav-ul-list::after{
+  content: "";
+  position: absolute;
+  width: 35%;
+  height: 2px;
+  bottom: 5px;
+  right: 25%;
+  background: $primary;
+  transition: transform 200ms ease-in;
+  transform: scaleX(0);
+  transform-origin: right;
+  z-index: -1;
+}
+.header-menu-nav-ul-list:hover::after{
+  background: rgb(244, 148, 148);
+  transform: scaleX(1);
+  transform-origin: left;
+}
+// _______________________________________________________________________________
+
+
+// ---- dropping menu under About and Service ----------------------------
+.header-menu-nav-ul-list{
+  position: relative;
+  &-underlist{
+    position: absolute;
+    list-style-type: none;
+    top: 65px;
+    left: 0;
+    z-index: -1;
+    background-color: white;
+    width: 220px;
+    padding: 13px 13px;
+    box-shadow: 0 5px 30px rgb(0 0 0 / 20%);
+    opacity: 0;
+    transition: transform 0.2s ease-in, opacity 0.2s ease-in; 
+  }
+  
+}
+.header-menu-nav-ul-list:hover .header-menu-nav-ul-list-underlist{
+  z-index: 3;
+  opacity: 1;
+  transform: translateY(-20px);
+}
+.header-menu-nav-ul-list-underlist-li{
+  padding: 5px 0;
+  a{
+    font-size: 14px;
+    font-family: "Manrope",Arial,Helvetica,sans-serif;
+    line-height: 21px;
+    color: grey;
+  }
+}
+
+.header-menu-nav-ul-list-underlist-li > a::after{
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    width: 20px;
+    bottom: -4px;
+    height: 2px;
+    background-color: $primary;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: 300ms ease transform;
+}
+.header-menu-nav-ul-list-underlist-li > a:hover::after{
+  background: $red-decoration;
+  transform: scaleX(1);
+  transform-origin: left;
+}
+.header-menu-nav-ul-list-underlist-li > a:hover{
+  color: black;
+}
+
+// _______________________________________________________________________
+
